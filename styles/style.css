@@ -1,1 +1,249 @@
-/* место для вашего кода */
+.header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 109px);
+  gap: 10px;
+  padding: 92px 49px 92px 51px;
+  background-color: aqua;
+  
+}
+
+.header__menu {
+  grid-column: 1;
+  align-self: center;
+}
+
+.header__menu-list {
+  display: flex;
+  gap: 10px;
+  list-style: circle inside;
+  white-space: nowrap;
+}
+
+.header__menu-item {
+  font-family: Raleway, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.header__menu-item-first {
+  list-style: none;
+}
+
+.header__menu-link {
+  border-bottom: 1px solid #000;
+  padding: 2px 0;
+  color: #000;
+  text-decoration: none;
+}
+
+.header__menu-link-active {
+  border-bottom: none;
+}
+
+.header__logo__link {
+  display: block;
+  grid-column: 2;
+  justify-self: center;
+  align-self: center;
+  width: 148px;
+ 
+  /* content-box
+   height: 105px;
+  */
+}
+
+.header__logo {
+  width: 100%;
+}
+
+.header__contacts {
+  grid-column: 3;
+  justify-self: right;
+  align-self: center;
+  color: #000;
+  font-family: Raleway;
+  font-weight: normal;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 24.3px;
+}
+
+.header__contacts-links {
+  border-bottom: 1px solid #000;
+  text-decoration: none;
+}
+
+.cover {
+  position: relative;
+  min-height: 757px;
+  background-image: url(/images/cover.jpg);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: auto auto;;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.cover__title {
+  position: relative;
+  color: #FFF;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 100px;
+  font-style: normal;
+  line-height: 115%; /* 115px */
+  letter-spacing: 30px;
+  text-transform: uppercase;
+  z-index: 1;
+  padding: 165px 50px 135px 50px;
+}
+.aligned-text {
+  display: block;
+}
+
+.aligned-text_center {
+  text-align: center;
+
+}
+.aligned-text_right {
+  text-align: right;
+}
+
+
+
+
+.cover__descriptiom {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 52px);
+  gap: 10px;
+  padding: 0px 50px 50px 50px;
+
+}
+
+
+
+
+
+
+
+.cover__description-text {
+  grid-column: 2;
+  align-self: center;
+  justify-self: center;
+  display: inline-block;
+  color: #FFF;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 28px; /* 127.273% */
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.bet-button {
+  grid-column: 3;
+  justify-self: right;
+  width: 257px;
+  height: 52px;
+  background-color: transparent;
+  color: #FFF;
+  border: 1px solid #FFF;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 22px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.lots {
+  padding: 180px 50px 0px 50px;
+  
+}
+
+.lots__heading{
+  padding-left: 40px;
+  padding-bottom: 27px;
+  color: #000;
+  font-family: Raleway;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;  
+}
+
+.lots__card-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 20px;
+  
+}
+
+.lots__card-list-item{
+  display: block;
+  width: 430px;
+  height: 450px;
+  padding-bottom: 30px;
+}
+
+.card-link {
+  display: block;
+  text-decoration: none;
+  height: 100%  
+}
+
+.card {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.card_type_film {
+  background-image: url(/images/card-lot-01.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+.card_type_book {
+  background-image: url(/images/card-lot-02.jpg);
+  background-position: center center;
+  background-size: cover;  
+}
+
+.card_type_picture {
+  background-image: url(/images/card-lot-03.jpg);
+  background-position: center center;
+  background-size: cover;  
+}
+
+.lots__look-more-link {
+  border-bottom: 1px solid #000;
+  text-decoration: none;
+  color: #000;
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 40px;
+
+}
+
+
+
+
+
+
+
+
+footer {
+height: 1220px;
+}
