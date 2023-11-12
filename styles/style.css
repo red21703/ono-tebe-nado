@@ -52,12 +52,12 @@
 
 .address {
   align-self: center;
+  max-width: 100%;
   color: #000;
   font-weight: normal;
   font-size: 18px;
   font-style: normal;
   line-height: 24.3px;
-  max-width: 100%;
 }
 
 .header__address {
@@ -73,14 +73,13 @@
 }
 
 .contacts-links {
-  text-decoration: none;
   display: table;
+  text-decoration: none;
 }
 
 .phone {
   border-bottom: 1px solid #000;
   line-height: 20.3px;
-
 }
 .email {
   border-bottom: 1px solid #000;
@@ -89,22 +88,27 @@
 
 .cover {
   position: relative;
+  z-index: 1;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: top left;
-  z-index: 1;
+  background-size: cover;
 }
 .overlay {
   position: absolute;
   inset: 0;
+  z-index: -1;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
-  z-index: -1;
 }
 
 .cover__title {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 20px;
   padding: 165px 50px 135px 50px;
   color: #fff;
   font-weight: 700;
@@ -113,15 +117,9 @@
   line-height: 100%;
   letter-spacing: 30px;
   text-transform: uppercase;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  gap: 20px;
-
 }
 .aligned-text {
-   text-align: left;
+  text-align: left;
 }
 
 .aligned-text_center {
@@ -132,7 +130,7 @@
 }
 
 .cover_custom_line_height {
-  line-height: 115%; 
+  line-height: 115%;
 }
 
 .letter-spacing-extended {
@@ -153,7 +151,7 @@
 
 .cover__description-text {
   align-self: center;
-  padding-left: 200px;  
+  padding-left: 200px;
   color: #fff;
   font-weight: normal;
   font-size: 22px;
@@ -212,16 +210,16 @@
 
 .card {
   position: relative;
+  z-index: 1;
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
   justify-content: center;
   align-content: space-between;
+  gap: 15px;
   height: 100%;
-  z-index: 1;
+  background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-repeat:no-repeat;
 }
 
 .card_type_film {
@@ -237,12 +235,12 @@
 }
 
 .lots__look-more-link {
+  margin-left: 40px;
   border-bottom: 1px solid #000;
   color: #000;
   font-weight: 400;
   font-size: 20px;
   text-decoration: none;
-  margin-left: 40px;
 }
 
 .card-positioning {
@@ -252,6 +250,7 @@
 .card-header {
   position: relative;
   width: 100%;
+  padding-top: 50px;
   color: #fff;
   font-weight: 700;
   font-size: 22px;
@@ -259,28 +258,25 @@
   line-height: 120%; /* 26.4px */
   text-decoration-line: underline;
   text-transform: uppercase;
-  padding-top: 50px;
 }
 
 .card-text {
   position: relative;
   width: 100%;
-  
+  padding-bottom: 50px;
+
   color: #fff;
   font-weight: 400;
   font-size: 20px;
   font-style: normal;
   line-height: 120%; /* 24px */
-  padding-bottom: 50px;
 }
 
-
-
 .about {
-  padding: 0 50px 180px 43px;
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 19px;
+  padding: 0 50px 180px 43px;
 }
 
 .about__logo {
@@ -323,7 +319,6 @@
   font-size: 20px;
   font-style: normal;
   line-height: normal;
-
 }
 
 .footer {
@@ -371,8 +366,8 @@
 
 .footer__social-link {
   display: inline-block;
-  cursor: pointer;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .footer__social-icon {
