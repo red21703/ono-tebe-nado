@@ -89,7 +89,6 @@
 
 .cover {
   position: relative;
-  min-height: 757px;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -111,13 +110,18 @@
   font-weight: 700;
   font-size: 100px;
   font-style: normal;
-  line-height: 115%;
+  line-height: 100%;
   letter-spacing: 30px;
   text-transform: uppercase;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 20px;
+
 }
 .aligned-text {
-  display: block;
-  height: 115px;
+   text-align: left;
 }
 
 .aligned-text_center {
@@ -127,81 +131,38 @@
   text-align: right;
 }
 
-.cover__title-first_raw_letter_spacing_custom {
+.cover_custom_line_height {
+  line-height: 115%; 
+}
+
+.letter-spacing-extended {
   letter-spacing: 60px;
 }
 
-.cover__title-second_raw_position {
-  padding-top: 12px;
-  padding-right: 60px;
-  font-size: 0;
-  letter-spacing: 0;
-}
-
-.cover__title-second_raw_letter_spacing_custom_first_part {
-  font-size: 100px;
-  letter-spacing: 30px;
-}
-
-.cover__title-second_raw_letter_spacing_custom_second_part {
-  font-size: 100px;
-  letter-spacing: 60px;
-}
-
-.cover__title-second_raw_letter_spacing_custom_third_part {
-  font-size: 100px;
-}
-
-.cover__title-third_raw_position {
-  padding-top: 17px;
-  font-size: 0;
-  letter-spacing: 0;
-}
-
-.cover__title-third_raw_letter_spacing_custom_first_part {
-  font-size: 100px;
-  letter-spacing: 60px;
-}
-
-.cover__title-third_raw_letter_spacing_custom_second_part {
-  font-size: 100px;
-  letter-spacing: 30px;
-}
-
-.cover__title-disable_letter_spacing {
-  font-size: 100px;
+.no-letter-spacing {
   letter-spacing: 0;
 }
 
 .cover__descriptiom {
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(1, 52px);
-  gap: 10px;
-  margin: 10px 50px 0;
+  display: flex;
+  justify-content: right;
+  gap: 78px;
+  margin: 0 50px;
+  padding-bottom: 50px;
 }
 
 .cover__description-text {
-  display: inline-block;
-  grid-column: 2/7;
-  justify-self: center;
   align-self: center;
-  margin-left: 122px;
+  padding-left: 200px;  
   color: #fff;
   font-weight: normal;
   font-size: 22px;
   line-height: 28px;
   text-transform: uppercase;
-  word-spacing: 21px;
-}
-
-.cover__description-text-first {
-  word-spacing: 17px;
+  word-spacing: 18px;
 }
 
 .bet-button {
-  grid-column: 7;
   justify-self: right;
   width: 257px;
   height: 52px;
