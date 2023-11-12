@@ -26,7 +26,7 @@
   text-decoration: none;
 }
 
-.header__menu-item-first {
+.header__menu-item:first-of-type {
   list-style: none;
 }
 
@@ -59,22 +59,34 @@
   font-size: 18px;
   font-style: normal;
   line-height: 24.3px;
+  max-width: 100%;
 }
 
-.address-align-right {
+.header__address {
   grid-column: 3;
   justify-self: right;
   margin-right: 3px;
 }
 
-.address-align-left {
+.footer__address {
   grid-column: 1;
   justify-self: left;
+  padding-top: 2px;
 }
 
-.header__contacts-links {
-  border-bottom: 1px solid #000;
+.contacts-links {
   text-decoration: none;
+  display: table;
+}
+
+.phone {
+  border-bottom: 1px solid #000;
+  line-height: 20.3px;
+
+}
+.email {
+  border-bottom: 1px solid #000;
+  line-height: 23.3px;
 }
 
 .cover {
@@ -266,16 +278,13 @@
   background-size: cover;
 }
 
-.lots__look-more-padding {
-  padding-left: 40px;
-}
-
 .lots__look-more-link {
   border-bottom: 1px solid #000;
   color: #000;
   font-weight: 400;
   font-size: 20px;
   text-decoration: none;
+  margin-left: 40px;
 }
 
 .card-header {
