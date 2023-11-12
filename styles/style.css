@@ -120,8 +120,8 @@
 }
 
 .cover__title-second_raw_position {
-  margin-right: 60px;
   padding-top: 12px;
+  padding-right: 60px;
   font-size: 0;
   letter-spacing: 0;
 }
@@ -168,8 +168,7 @@
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(1, 52px);
   gap: 10px;
-  margin-top: 10px;
-  padding: 0px 50px;
+  padding: 10px 50px 0;
 }
 
 .cover__description-text {
@@ -267,8 +266,11 @@
   background-size: cover;
 }
 
+.lots__look-more-padding {
+  padding-left: 40px;
+}
+
 .lots__look-more-link {
-  margin-left: 40px;
   border-bottom: 1px solid #000;
   color: #000;
   font-weight: 400;
@@ -329,10 +331,10 @@
 .about__title {
   justify-self: left;
   align-self: self-start;
-  margin-top: 100px;
+  padding-top: 100px;
 }
 .about__title-header {
-  margin-bottom: 100px;
+  padding-bottom: 100px;
   color: #000;
   font-weight: 700;
   font-size: 40px;
@@ -341,7 +343,7 @@
   text-transform: uppercase;
 }
 .about__title-text {
-  margin-bottom: 25px;
+  padding-bottom: 25px;
   color: #000;
   font-weight: 400;
   font-size: 20px;
@@ -350,7 +352,7 @@
 }
 
 .about__title-text-last-paragraph {
-  margin: 0;
+  padding-bottom: 0;
 }
 
 .footer {
