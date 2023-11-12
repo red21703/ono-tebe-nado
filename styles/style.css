@@ -13,14 +13,12 @@
 
 .header__menu-list {
   display: flex;
-  gap: 31px;
+  gap: 32px;
   list-style: circle inside;
   list-style-position: outside;
-  white-space: nowrap;
 }
 
 .header__menu-item {
-  font-family: Raleway, sans-serif;
   font-weight: normal;
   font-size: 18px;
   text-decoration: none;
@@ -92,20 +90,22 @@
 .cover {
   position: relative;
   min-height: 757px;
-  background-image: url(/images/cover.jpg);
+  background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: top left;
+  z-index: 1;
 }
 .overlay {
   position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
 }
 
 .cover__title {
-  position: relative;
-  z-index: 1;
   padding: 165px 50px 135px 50px;
   color: #fff;
   font-weight: 700;
@@ -175,12 +175,11 @@
 
 .cover__descriptiom {
   position: relative;
-  z-index: 1;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(1, 52px);
   gap: 10px;
-  padding: 10px 50px 0;
+  margin: 10px 50px 0;
 }
 
 .cover__description-text {
@@ -188,14 +187,13 @@
   grid-column: 2/7;
   justify-self: center;
   align-self: center;
-  padding-left: 122px;
+  margin-left: 122px;
   color: #fff;
   font-weight: normal;
   font-size: 22px;
   line-height: 28px;
   text-transform: uppercase;
   word-spacing: 21px;
-  white-space: nowrap;
 }
 
 .cover__description-text-first {
@@ -222,8 +220,8 @@
 }
 
 .lots__heading {
-  padding-bottom: 27px;
-  padding-left: 40px;
+  margin-bottom: 27px;
+  margin-left: 40px;
   color: #000;
   font-weight: 700;
   font-size: 40px;
@@ -255,27 +253,26 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
+  gap: 15px;
   justify-content: center;
   align-content: space-between;
   height: 100%;
+  z-index: 1;
+  background-position: center center;
+  background-size: cover;
+  background-repeat:no-repeat;
 }
 
 .card_type_film {
-  background-image: url(/images/card-lot-01.jpg);
-  background-position: center center;
-  background-size: cover;
+  background-image: url(../images/card-lot-01.jpg);
 }
 
 .card_type_book {
-  background-image: url(/images/card-lot-02.jpg);
-  background-position: center center;
-  background-size: cover;
+  background-image: url(../images/card-lot-02.jpg);
 }
 
 .card_type_picture {
-  background-image: url(/images/card-lot-03.jpg);
-  background-position: center center;
-  background-size: cover;
+  background-image: url(../images/card-lot-03.jpg);
 }
 
 .lots__look-more-link {
@@ -287,10 +284,13 @@
   margin-left: 40px;
 }
 
+.card-positioning {
+  padding: 0 40px;
+}
+
 .card-header {
   position: relative;
   width: 100%;
-  padding: 50px 40px 0 40px;
   color: #fff;
   font-weight: 700;
   font-size: 22px;
@@ -298,24 +298,25 @@
   line-height: 120%; /* 26.4px */
   text-decoration-line: underline;
   text-transform: uppercase;
+  padding-top: 50px;
 }
 
 .card-text {
   position: relative;
   width: 100%;
-  padding: 0 40px 50px 40px;
+  
   color: #fff;
   font-weight: 400;
   font-size: 20px;
   font-style: normal;
   line-height: 120%; /* 24px */
+  padding-bottom: 50px;
 }
+
+
 
 .about {
   padding: 0 50px 180px 43px;
-}
-
-.about__column {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 19px;
@@ -351,17 +352,17 @@
   line-height: normal;
   text-transform: uppercase;
 }
-.about__title-text {
-  padding-bottom: 25px;
+.about_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 25px;
   color: #000;
   font-weight: 400;
   font-size: 20px;
   font-style: normal;
   line-height: normal;
-}
 
-.about__title-text-last-paragraph {
-  padding-bottom: 0;
 }
 
 .footer {
@@ -400,21 +401,19 @@
   justify-self: right;
   justify-content: space-between;
   align-self: self-start;
-  width: 240px;
-  height: 48px;
+  min-width: 240px;
 }
 
 .footer__social-list-item {
   display: block;
-  height: 100%;
 }
 
 .footer__social-link {
   display: inline-block;
-  height: 100%;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .footer__social-icon {
-  height: 100%;
+  height: 48px;
 }

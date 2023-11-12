@@ -10,7 +10,7 @@
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
   </head>
 
-  <body>
+  <body class="page">
     <header class="header">
       <nav class="header__menu">
         <ul class="header__menu-list">
@@ -99,10 +99,10 @@
             <a class="card-link" href="#0">
               <article class="card card_type_film">
                 <div class="overlay"></div>
-                <h3 class="card-header">
+                <h3 class="card-header card-positioning">
                   Фильм режиссёра, который бросил киношколу
                 </h3>
-                <p class="card-text">
+                <p class="card-text card-positioning">
                   Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
                   ставка, если бы вы не знали, что режиссёр — Пол Томас
                   Андерсон?
@@ -114,10 +114,10 @@
             <a class="card-link" href="#0">
               <article class="card card_type_book">
                 <div class="overlay"></div>
-                <h3 class="card-header">
+                <h3 class="card-header card-positioning">
                   Книга, где описан один скучный день из жизни рекламного агента
                 </h3>
-                <p class="card-text">
+                <p class="card-text card-positioning">
                   Объёмом почти в тысячу страниц. Иногда без знаков препинания и
                   с переходами на древнеанглийский. В ней одновременно
                   рассказывается о 16 июня 1904 года и об истории литературы,
@@ -132,10 +132,10 @@
             <a class="card-link" href="#0">
               <article class="card card_type_picture">
                 <div class="overlay"></div>
-                <h3 class="card-header">
+                <h3 class="card-header card-positioning">
                   Картина, которую повторит даже 5-летний сын маминой подруги
                 </h3>
-                <p class="card-text">
+                <p class="card-text card-positioning">
                   Ну действительно, там линия, тут кружочек, а здесь и вовсе
                   что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
                   котиков… Сколько бы вы на такое поставили, если бы не знали,
@@ -148,7 +148,6 @@
         <a class="lots__look-more-link" href="#0">посмотреть больше</a>
       </section>
       <section class="about">
-        <div class="about__column">
           <div class="about__logo">
             <img
               class="about__logo-image"
@@ -158,14 +157,15 @@
           </div>
           <div class="about__title">
             <h2 class="about__title-header">Об аукционе</h2>
-            <p class="about__title-text">
+            <div class="about_text">
+            <p>
               Здесь вы не встретите очередное пафосное собрание невероятно
               дорогого антиквариата. Наши лоты вообще не должны были попасть ни
               на один аукцион. Потому что кому нужен дневник девочки-подростка
               или картина, которую может нарисовать даже ребёнок? Кому нужны все
               эти странные вещи, созданные любителями?
             </p>
-            <p class="about__title-text about__title-text-last-paragraph">
+            <p>
               Слишком сложные или, наоборот, слишком простые. Опережающие своё
               время. В пух и прах растерзанные критиками. Непринятые и
               непонятые. Когда-то они казались просто неудачными. Но, несмотря
@@ -175,7 +175,7 @@
               лоты стали культовыми.
             </p>
           </div>
-        </div>
+          </div>
       </section>
     </main>
     <footer class="footer">
