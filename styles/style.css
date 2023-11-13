@@ -52,7 +52,7 @@
 
 .address {
   align-self: center;
-  max-width: 100%;
+  max-width: 240px;
   color: #000;
   font-weight: normal;
   font-size: 18px;
@@ -73,18 +73,9 @@
 }
 
 .contacts-links {
-  display: table;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
-.phone {
-  border-bottom: 1px solid #000;
-  line-height: 20.3px;
-}
-.email {
-  border-bottom: 1px solid #000;
-  line-height: 23.3px;
-}
 
 .cover {
   position: relative;
@@ -138,7 +129,7 @@
 }
 
 .no-letter-spacing {
-  letter-spacing: 0;
+  letter-spacing: initial;
 }
 
 .cover__descriptiom {
@@ -357,7 +348,8 @@
   justify-self: right;
   justify-content: space-between;
   align-self: self-start;
-  min-width: 240px;
+  max-width: 240px;
+  gap: 48px;
 }
 
 .footer__social-list-item {
