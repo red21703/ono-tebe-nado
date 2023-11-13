@@ -76,7 +76,6 @@
   text-decoration: underline;
 }
 
-
 .cover {
   position: relative;
   z-index: 1;
@@ -95,7 +94,6 @@
 }
 
 .cover__title {
-
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -347,9 +345,9 @@
   grid-column: 3;
   justify-self: right;
   justify-content: space-between;
+  gap: 48px;
   align-self: self-start;
   max-width: 240px;
-  gap: 48px;
 }
 
 .footer__social-list-item {
